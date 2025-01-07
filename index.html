@@ -72,21 +72,241 @@
         </div>
       </div>
       <!-- 文章分类导航 -->
-      <div class="article-catalogary-nav"></div>
+      <div class="article-catalogary-nav">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              <img src="latest-article-icon.png" alt="最新文章 Icon" /> 最新文章
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-proto-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-proto"
+              type="button"
+              role="tab"
+              aria-controls="pills-proto"
+              aria-selected="false"
+            >
+              <img src="proto-icon.png" alt="原型 Icon" /> 原型
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-design-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-design"
+              type="button"
+              role="tab"
+              aria-controls="pills-design"
+              aria-selected="false"
+            >
+              <img src="design-icon.png" alt="设计 Icon" /> 设计
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-product-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-product"
+              type="button"
+              role="tab"
+              aria-controls="pills-product"
+              aria-selected="false"
+            >
+              <img src="product-icon.png" alt="产品 Icon" /> 产品
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-tool-recommend-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-tool-recommend"
+              type="button"
+              role="tab"
+              aria-controls="pills-tool-recommend"
+              aria-selected="false"
+            >
+              <img src="tool-recommend-icon.png" alt="工具推荐 Icon" /> 工具推荐
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-job-article-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-job-article"
+              type="button"
+              role="tab"
+              aria-controls="pills-job-article"
+              aria-selected="false"
+            >
+              <img src="job-article-icon.png" alt="职场干货 Icon" /> 职场干货
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-news-article-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-news-article"
+              type="button"
+              role="tab"
+              aria-controls="pills-news-article"
+              aria-selected="false"
+            >
+              <img src="news-article-icon.png" alt="行业资讯 Icon" /> 行业资讯
+            </button>
+          </li>
+        </ul>
+      </div>
+
       <!-- 文章列表 -->
       <div class="article-catalogary">
-        <!-- 左侧文章列表 -->
-        <div class="article-list"></div>
-        <!-- 右侧文章浮层 -->
-        <div class="article-detail">
-          <!-- 工具推荐文章 -->
-          <div class="tool-recommend"></div>
-          <!-- 专题文章 & 大咖专栏 -->
-          <div class="subject-article"></div>
-          <!-- 热门文章 -->
-          <div class="hot-article"></div>
+        <div class="row">
+          <div class="col-8">
+            <!-- 左侧文章列表 -->
+            <div class="article-list">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="container mt-4">
+                    <div
+                      class="card shadow-sm"
+                      style="border-radius: 12px; overflow: hidden"
+                    >
+                      <div class="row g-0 align-items-center">
+                        <!-- 左侧图片 -->
+                        <div class="col-md-4">
+                          <img
+                            src="https://via.placeholder.com/300"
+                            alt="文章封面"
+                            class="img-fluid"
+                            style="
+                              border-top-left-radius: 12px;
+                              border-bottom-left-radius: 12px;
+                              object-fit: cover;
+                              height: 100%;
+                            "
+                          />
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="col-md-8 p-3">
+                          <div
+                            class="d-flex flex-column justify-content-between h-100"
+                          >
+                            <!-- 标题 -->
+                            <h5 class="card-title fw-bold">文章标题文案示例</h5>
+                            <!-- 摘要 -->
+                            <p class="card-text text-muted">
+                              文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要文章摘要
+                            </p>
+                            <!-- 底部分类和日期 -->
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <span
+                                class="badge bg-primary text-white px-3 py-1"
+                                >产品</span
+                              >
+                              <span class="text-muted">2024-12-25</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-proto"
+                  role="tabpanel"
+                  aria-labelledby="pills-proto-tab"
+                  tabindex="0"
+                >
+                  原型内容...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-design"
+                  role="tabpanel"
+                  aria-labelledby="pills-design-tab"
+                  tabindex="0"
+                >
+                  设计内容...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-product"
+                  role="tabpanel"
+                  aria-labelledby="pills-product-tab"
+                  tabindex="0"
+                >
+                  产品内容...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-tool-recommend"
+                  role="tabpanel"
+                  aria-labelledby="pills-tool-recommend-tab"
+                  tabindex="0"
+                >
+                  工具推荐内容...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-job-article"
+                  role="tabpanel"
+                  aria-labelledby="pills-job-article-tab"
+                  tabindex="0"
+                >
+                  职场干货内容...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-news-article"
+                  role="tabpanel"
+                  aria-labelledby="pills-news-article-tab"
+                  tabindex="0"
+                >
+                  行业资讯内容...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <!-- 右侧文章浮层 -->
+          <div class="article-detail">
+            <!-- 工具推荐文章 -->
+            <div class="tool-recommend"></div>
+            <!-- 专题文章 & 大咖专栏 -->
+            <div class="subject-article"></div>
+            <!-- 热门文章 -->
+            <div class="hot-article"></div>
+          </div>
         </div>
       </div>
+
       <!-- 页脚 -->
       <div class="explore-more"></div>
     </div>
