@@ -502,3 +502,35 @@
 .explore-more .link-arrow {
   line-height: 36px;
 }
+
+.fixed-link {
+  position: fixed;
+  top: 832px; 
+  right: 32px; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000; 
+  transition: top 0.5s ease; 
+}
+
+.rectangle {
+  width: 48px;
+  height: 48px;
+  background-color: #3498db;
+}
+
+.wechat {
+  /* position: relative; */
+}
+
+.wechat-container {
+  width: 178px;
+  height: 201px;
+  display: none;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+  background-color: gray;
+  transition: all ease-in-out 0.5s;
+}

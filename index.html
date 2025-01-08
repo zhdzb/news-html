@@ -782,5 +782,19 @@
         </div>
       </div>
     </div>
+    <aside class="fixed-link">
+      <div class="rectangle" id="wechat-btn"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+      <div class="wechat-container" id="wechat-code" style="display: none"></div>
+    </aside>
   </body>
+  <script>
+    document.getElementById('wechat-btn').addEventListener('mouseover', () => {
+      document.getElementById('wechat-code').style.display = 'block';
+    });
+    document.getElementById('wechat-btn').addEventListener('mouseout', () => {
+      document.getElementById('wechat-code').style.display = 'none';
+    });
+  </script>
 </html>
