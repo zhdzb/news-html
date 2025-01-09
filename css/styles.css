@@ -134,12 +134,18 @@
 
 .article-catalogary-nav ul .nav-item .nav-link.active {
   color: #fff;
+
 }
 
-.article-catalogary-nav ul .nav-item .nav-link img {
+.article-catalogary-nav ul .nav-item .nav-link svg {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+  fill: #000;
+}
+
+.article-catalogary-nav ul .nav-item .nav-link.active svg {
+  fill: #fff;
 }
 
 .article-catalogary {
