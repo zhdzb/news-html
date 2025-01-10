@@ -105,6 +105,7 @@
   margin: 0 auto;
   margin-bottom: 80px;
   padding: 16px 9px;
+  z-index: 40;
   background-color: #fff;
 }
 
@@ -155,6 +156,7 @@
 
 .article-catalogary .article-list {
   width: 868px;
+  height: 2016px;
 }
 
 .article-catalogary .article-list .tab-pane .container {
@@ -205,7 +207,7 @@
   .article-content-card
   .article-description
   .card-text {
-  max-height: 48px;
+  min-height: 48px;
   margin-bottom: 36px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -445,15 +447,30 @@
   color: rgba(107, 112, 123, 1);
   font-size: 16px;
   text-align: center;
+  line-height: 24px;
 }
 
 .pagination .page-item.active .page-link {
+  border-color: rgba(22, 132, 252, 1);
   background-color: rgba(22, 132, 252, 1);
   color: #fff;
 }
 
 .pagination .page-item .page-link:focus {
   box-shadow: none;
+}
+
+.page-link.pagination-btn {
+  padding: 0;
+  border: none;
+}
+
+.page-link.page-link.pagination-btn svg {
+  fill: rgba(107, 112, 123, 1);
+}
+
+.page-item.disabled {
+  cursor: not-allowed;
 }
 
 .explore-more {

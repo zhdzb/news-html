@@ -75,6 +75,7 @@ p {
 /* 左侧目录 */
 .left-side {
   width: 376px;
+  height: fit-content;
   padding: 32px 24px;
   border-radius: 16px;
   flex-shrink: 0;
@@ -159,6 +160,15 @@ p {
 }
 
 .content-detail .update-time {
+}
+
+.article-content .content {
+    overflow: hidden;
+}
+
+.article-content .content img {
+    width: 600px;
+    height: auto;
 }
 
 /* 右侧资源位 */
