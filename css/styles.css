@@ -85,6 +85,20 @@
   color: rgba(107, 112, 123, 1);
 }
 
+.btn.btn-primary:hover {
+  background-color: rgba(38, 147, 255, 1) !important;
+}
+
+.btn.btn-primary:active {
+    background-color: rgba(0, 94, 217, 1) !important;
+}
+
+.btn.btn.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
 .top-banner .top-banner-text .btn {
   width: 240px;
   height: 60px;
@@ -166,6 +180,11 @@
 .article-catalogary .article-list .card {
   margin-bottom: 48px;
   border: 0px;
+  transition: all ease-in-out 0.2s;
+}
+
+.article-catalogary .article-list .card:hover {
+  transform: translateY(-2px);
 }
 
 .article-catalogary .article-list .article-content-card {
@@ -179,7 +198,11 @@
   height: 100%;
   margin-right: 36px;
   border-radius: 12px;
-  /* object-fit: cover; */
+  cursor: pointer;
+}
+
+.article-catalogary .article-list .article-content-card .img-fluid:hover {
+  box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
 }
 
 .article-catalogary .article-list .article-content-card .article-description {
@@ -200,7 +223,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: #000;
+  cursor: pointer;
 }
+
+.article-catalogary
+  .article-list
+  .article-content-card
+  .article-description
+  .card-title:hover {
+    color: rgba(22, 132, 252, 1);
+  }
 
 .article-catalogary
   .article-list
@@ -264,6 +296,11 @@
   padding: 24px 24px 24px 16px;
   border-radius: 12px;
   background-color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.tool-recommend .tool-recommend-card:hover {
+  transform: translateY(-3px);
 }
 
 .tool-recommend .tool-recommend-card img {
@@ -271,9 +308,15 @@
   height: 48px;
   border-radius: 8px;
   align-self: flex-start;
+  cursor: pointer;
 }
 
 .tool-recommend .tool-recommend-card .fw-bold {
+  cursor: pointer;
+}
+
+.tool-recommend .tool-recommend-card .fw-bold:hover {
+  color: rgba(22, 132, 252, 1);
 }
 
 .tool-recommend .tool-recommend-card .text-muted {
@@ -311,6 +354,15 @@
   padding: 32px 16px;
   border-radius: 12px;
   background-color: #fff;
+}
+
+.side-tab-content .article-card .fw-bold,
+.side-tab-content .article-card img {
+  cursor: pointer;
+}
+
+.side-tab-content .article-card .fw-bold:hover {
+  color: rgba(22, 132, 252, 1);
 }
 
 .side-tab-content .article-card.figma {
@@ -361,6 +413,11 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  cursor: pointer;
+}
+
+.side-tab-content .img-article-card .card-title:hover {
+  color: rgba(22, 132, 252, 1);
 }
 
 .side-tab-content .img-article-card .article-detail {
@@ -407,6 +464,11 @@
   width: 328px;
   height: 202px;
   border-radius: 12px;
+  cursor: pointer;
+}
+
+.hot-article .hot-article-card img:hover {
+  box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hot-article .hot-article-card .hot-article-title {
@@ -421,6 +483,11 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  cursor: pointer;
+}
+
+.hot-article .hot-article-card .hot-article-title:hover {
+  color: rgba(22, 132, 252, 1);
 }
 
 .hot-article .btn {
@@ -448,6 +515,10 @@
   font-size: 16px;
   text-align: center;
   line-height: 24px;
+}
+
+.pagination .page-link:not(.pagination-btn):hover {
+  border: 1px solid rgba(22, 132, 252, 1);
 }
 
 .pagination .page-item.active .page-link {
