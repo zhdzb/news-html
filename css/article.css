@@ -68,13 +68,13 @@ p {
 }
 
 .btn.btn-primary:active {
-    background-color: rgba(0, 94, 217, 1) !important;
+  background-color: rgba(0, 94, 217, 1) !important;
 }
 
 .btn.btn.btn-primary:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .top-banner .top-banner-text .btn {
@@ -147,6 +147,10 @@ p {
   color: #1684fc;
 }
 
+.left-side .menu-container .nav-link:hover {
+    color: #1684fc;
+}
+
 .nav-link.sub-is-active {
   background-color: #fff;
 }
@@ -188,12 +192,16 @@ p {
 }
 
 .article-content .content {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .article-content .content img {
-    width: 600px;
-    height: auto;
+  width: 600px;
+  height: auto;
+}
+
+.article-content .content .image {
+  text-align: center;
 }
 
 /* 右侧资源位 */
@@ -300,7 +308,7 @@ p {
 }
 
 .related-articles .related-articles-card:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .related-articles-card .card-image {
@@ -335,7 +343,7 @@ p {
 }
 
 .related-articles-card .card-title:hover {
-    color: rgba(22, 132, 252, 1);
+  color: rgba(22, 132, 252, 1);
 }
 
 .related-articles-card .card-description {
@@ -381,7 +389,7 @@ p {
 }
 
 .related-articles-card .card-footer .learn-more:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .related-articles-card .card-footer .learn-more span {
@@ -389,71 +397,70 @@ p {
   line-height: 26px;
 }
 
-
 /* wx css */
 .fixed-link {
-    position: fixed;
-    top: 832px; 
-    right: 32px; 
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 1000; 
-    transition: top 0.5s ease; 
-  }
+  position: fixed;
+  top: 832px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+  transition: top 0.5s ease;
+}
 
 .rectangle {
-    width: 48px;
-    height: 48px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    box-shadow: 0px 30px 80px 0px rgba(33, 39, 158, 0.04);
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .rectangle svg {
-    fill: rgba(17, 22, 20, 1);
-  }
-  
-  #wechat-btn:hover {
-    background-color: rgba(22, 132, 252, 1);
-  }
-  
-  #wechat-btn:hover svg,
-  #wechat-btn svg:hover {
-    fill: #fff;
-  }
-  
-  .wechat {
-    /* position: relative; */
-  }
-  
-  .wechat-container {
-    width: 178px;
-    height: 201px;
-    padding: 24px 24px 16px;
-    border-radius: 12px;
-    display: none;
-    position: absolute;
-    right: 60px;
-    bottom: 50px;
-    background-color: #fff;
-    transition: all ease-in-out 0.5s;
-    text-align: center;
-  }
-  
-  .wechat-container img {
-    width: 130px;
-    height: 130px;
-  }
-  
-  .wechat-container span {
-    color: rgba(107, 112, 123, 1);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-  }
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0px 30px 80px 0px rgba(33, 39, 158, 0.04);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rectangle svg {
+  fill: rgba(17, 22, 20, 1);
+}
+
+#wechat-btn:hover {
+  background-color: rgba(22, 132, 252, 1);
+}
+
+#wechat-btn:hover svg,
+#wechat-btn svg:hover {
+  fill: #fff;
+}
+
+.wechat {
+  /* position: relative; */
+}
+
+.wechat-container {
+  width: 178px;
+  height: 201px;
+  padding: 24px 24px 16px;
+  border-radius: 12px;
+  display: none;
+  position: absolute;
+  right: 60px;
+  bottom: 50px;
+  background-color: #fff;
+  transition: all ease-in-out 0.5s;
+  text-align: center;
+}
+
+.wechat-container img {
+  width: 130px;
+  height: 130px;
+}
+
+.wechat-container span {
+  color: rgba(107, 112, 123, 1);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
