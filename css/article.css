@@ -105,6 +105,7 @@ p {
   position: sticky;
   top: 142px;
   background-color: #f6f7fa;
+  display: none;
 }
 
 .left-side .menu-title {
@@ -148,7 +149,7 @@ p {
 }
 
 .left-side .menu-container .nav-link:hover {
-    color: #1684fc;
+  color: #1684fc;
 }
 
 .nav-link.sub-is-active {
@@ -217,6 +218,17 @@ p {
   position: sticky;
   top: 142px;
   background-color: rgba(233, 243, 255, 1);
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .left-side {
+    display: block;
+  }
+
+  .right-side {
+    display: block;
+  }
 }
 
 .right-side .right-side-title {
