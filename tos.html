@@ -1,17 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="mb-landing no-touch clip-path">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .mb-tosPage{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAAJElEQVQYlWP49+b1/n9vXu9lIABYGP4zsDAwMfwjpHAUUAcAADfvCS6vL64KAAAAAElFTkSuQmCC)}.mb-tosPage header.mb-header{text-align:center;margin:0 50px;padding-top:20px}.mb-tosPage header.mb-header h2,.mb-tosPage header.mb-header h3{margin:0;color:#27364e}.mb-tosPage header.mb-header h2{font-weight:600;font-size:44px;letter-spacing:1.2px;margin-bottom:15px}.mb-tosPage header.mb-header h3{font-size:30px;line-height:30px;font-weight:500}.mb-tosPage header.mb-header h6{font-size:16px;line-height:30px;color:#525e71;margin:0}.mb-tosPage .mb-header.dark{color:#fff}.mb-tosPage .mb-header.dark h6{color:rgba(255,255,255,0.8)}@media (max-width:414px){.mb-tosPage .mb-header h2{font-size:29px}.mb-tosPage .mb-header h3{font-size:22px}.mb-tosPage .mb-header h6{font-size:16px;line-height:26px}}.mb-tosPage section.tosPage-section{padding:5% 10%}.mb-tosPage section.tosPage-section h4{color:#f55d54;font-size:1.5rem;margin:50px 0 30px}.mb-tosPage section.tosPage-section h5{font-size:1.125rem;color:#525e71}.mb-tosPage section.tosPage-section h6{font-size:1rem;color:#525e71}.mb-tosPage section.tosPage-section p{font-size:.875rem;color:#27364e;margin:20px 0;text-indent:2em;line-height:1.25rem}.mb-tosPage section.tosPage-section table{margin:0 2em;max-width:80%}.mb-tosPage section.tosPage-section .text-white{color:#fff;background:#000}.mb-tosPage section.tosPage-section td{border:1px solid #dee2e6;padding:.75rem;vertical-align:top}
+      .mb-tosPage {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAAJElEQVQYlWP49+b1/n9vXu9lIABYGP4zsDAwMfwjpHAUUAcAADfvCS6vL64KAAAAAElFTkSuQmCC);
+      }
+      .mb-tosPage header.mb-header {
+        text-align: center;
+        margin: 0 50px;
+        padding-top: 20px;
+      }
+      .mb-tosPage header.mb-header h2,
+      .mb-tosPage header.mb-header h3 {
+        margin: 0;
+        color: #27364e;
+      }
+      .mb-tosPage header.mb-header h2 {
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: 1.2px;
+        margin-bottom: 15px;
+      }
+      .mb-tosPage header.mb-header h3 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 500;
+      }
+      .mb-tosPage header.mb-header h6 {
+        font-size: 16px;
+        line-height: 30px;
+        color: #525e71;
+        margin: 0;
+      }
+      .mb-tosPage .mb-header.dark {
+        color: #fff;
+      }
+      .mb-tosPage .mb-header.dark h6 {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      @media (max-width: 414px) {
+        .mb-tosPage .mb-header h2 {
+          font-size: 29px;
+        }
+        .mb-tosPage .mb-header h3 {
+          font-size: 22px;
+        }
+        .mb-tosPage .mb-header h6 {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .mb-tosPage section.tosPage-section {
+        padding: 5% 10%;
+      }
+      .mb-tosPage section.tosPage-section h4 {
+        color: #f55d54;
+        font-size: 1.5rem;
+        margin: 50px 0 30px;
+      }
+      .mb-tosPage section.tosPage-section h5 {
+        font-size: 1.125rem;
+        color: #525e71;
+      }
+      .mb-tosPage section.tosPage-section h6 {
+        font-size: 1rem;
+        color: #525e71;
+      }
+      .mb-tosPage section.tosPage-section p {
+        font-size: 0.875rem;
+        color: #27364e;
+        margin: 20px 0;
+        text-indent: 2em;
+        line-height: 1.25rem;
+      }
+      .mb-tosPage section.tosPage-section table {
+        margin: 0 2em;
+        max-width: 80%;
+      }
+      .mb-tosPage section.tosPage-section .text-white {
+        color: #fff;
+        background: #000;
+      }
+      .mb-tosPage section.tosPage-section td {
+        border: 1px solid #dee2e6;
+        padding: 0.75rem;
+        vertical-align: top;
+      }
+
+      .mb-tosPage header.mb-header {
+        text-align: center;
+        margin: 0 50px;
+        padding-top: 20px;
+      }
+      .mb-tosPage header.mb-header h2,
+      .mb-tosPage header.mb-header h3 {
+        margin: 0;
+        color: #27364e;
+      }
+      .mb-tosPage header.mb-header h2 {
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: 1.2px;
+        margin-bottom: 15px;
+      }
+      .mb-tosPage header.mb-header h3 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 500;
+      }
+      .mb-tosPage header.mb-header h6 {
+        font-size: 16px;
+        line-height: 30px;
+        color: #525e71;
+        margin: 0;
+      }
+      .mb-tosPage .mb-header.dark {
+        color: #fff;
+      }
+      .mb-tosPage .mb-header.dark h6 {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      @media (max-width: 414px) {
+        .mb-tosPage .mb-header h2 {
+          font-size: 29px;
+        }
+        .mb-tosPage .mb-header h3 {
+          font-size: 22px;
+        }
+        .mb-tosPage .mb-header h6 {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .mb-tosPage section.tosPage-section {
+        padding: 5% 10%;
+      }
+
+      .mb-tosPage section.tosPage-section h4 {
+        color: #f55d54;
+        font-size: 1.5rem;
+        margin: 50px 0 30px;
+      }
+      .mb-tosPage section.tosPage-section h5 {
+        font-size: 1.125rem;
+        color: #525e71;
+      }
+      .mb-tosPage section.tosPage-section h6 {
+        font-size: 1rem;
+        color: #525e71;
+      }
+      .mb-tosPage section.tosPage-section p {
+        font-size: 0.875rem;
+        color: #27364e;
+        margin: 20px 0;
+        text-indent: 2em;
+        line-height: 1.25rem;
+      }
+      .mb-tosPage section.tosPage-section table {
+        margin: 0 2em;
+        max-width: 80%;
+      }
+      .mb-tosPage section.tosPage-section .text-white {
+        color: #fff;
+        background: #000;
+      }
+      .mb-tosPage section.tosPage-section td {
+        border: 1px solid #dee2e6;
+        padding: 0.75rem;
+        vertical-align: top;
+      }
+
+      .mb-landing {
+        overflow-x: hidden;
+      }
+      .mb-landing a:link,
+      .mb-landing a:visited {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none;
+      }
+      .mb-landing .mb-homepage-new {
+        overflow-x: hidden;
+      }
+
+      .mb-tosPage a:link,
+      .mb-tosPage a:visited,
+      .mb-tosPage a:hover,
+      .mb-tosPage a:active {
+        text-decoration: inherit;
+        color: #eb5648;
+      }
     </style>
-</head>
-<body>
-    <div class="mb-tosPage">
-        11111111
-        33
+  </head>
+  <main class="mb-tosPage">
+    <div id="content">
+      <header class="mb-header">
+        <h2>自动续费服务协议</h2>
+      </header>
+      <section class="tosPage-section">
+        <h4>重要提示</h4>
+        <p>
+          欢迎使用墨刀APP会员自动续费委托扣款服务（以下简称“自动续费服务”或“本服务”），为了保障用户（以下称“您”）的权益，请在使用本服务之前，详细完整阅读此服务协议（以下简称“本协议”）所有内容，特别是加粗部分，并充分理解本协议约定的北京磨刀刻石科技有限公司与会员之间关于本服务的权利义务。未成年人则应在法定监护人陪同下阅读。除非您已阅读并同意本协议所有内容，否则您无权使用本服务。如您购买或使用本服务，即表示已经与北京磨刀刻石科技有限公司达成协议，并自愿接受本协议的所有内容。
+        </p>
+        <p><strong>1. 服务协议的接受和修订</strong></p>
+        <p>
+          1.1
+          《自动续费服务协议》（以下简称“本协议”）本协议为北京磨刀刻石科技有限公司《许可协议》及北京磨刀刻石科技有限公司已经发布的或将来可能发布/更新的各类规则的组成部分，与协议正文具有同等法律效力，本协议未约定的事项，以《许可协议》约定为准，本协议与其他协议及规则存在冲突的，以本协议为准。北京磨刀刻石科技有限公司不时发布的关于会员服务的各种规范、规则是《许可协议》的一部分，北京磨刀刻石科技有限公司将以恰当方式公示前述规范、规则后生效。
+        </p>
+        <p>
+          1.2
+          请您理解并同意，前述协议及规则是您使用本服务的先决条件，如您不同意本协议或其中任一条款，请您不要进入后续操作。如您选择继续使用本服务，您的使用行为将被视为同意遵守前述协议及规则。
+        </p>
+        <p><strong>2. 自动续费服务说明</strong></p>
+        <p><strong>2.1 订阅周期：自动续费服务分为连续包月、连续包季两种类型，对应的计费周期费用分为包月费用、包季费用。在您已开通本服务的前提下，您不可撤销地授权北京磨刀刻石科技有限公司在包月/包季（以您开通的自动续费类型为准）服务有效期即将过期时，自行或委托第三方支付渠道从您与北京磨刀刻石科技账号绑定的第三方支付账户（包括但不限于支付宝账户、微信钱包账户、苹果钱包账户）中扣取下一个计费周期费用。</strong></p>
+        <p><strong>2.2 自动续费：北京磨刀刻石科技有限公司自行或委托第三方支付渠道通过第2.1条所述账户收取相应付费服务的下一计费周期费用，并将款项记入支付记录，同时相应延长付费服务的有效期的扣费方式。北京磨刀刻石科技有限公司会在自动续费到期前5日通知您（包括但不限于电子邮件、短信、微信消息推送），请您留意扣款通知。您需保证北京磨刀刻石科技有限公司可以自行或委托第三方支付渠道从上述账户扣款成功，因上述账户中可扣款余额不足导致的续费失败，由您自行承担责任（包括但不限于相应权益终止，无法参加相关活动等）。若您通过特殊活动开通自动续费服务，相应的自动续费扣款时间可能与前述时间不一致，北京磨刀刻石科技有限公司将在活动页面予以提示，请您注意。</strong></p>
+        <p>2.3 当您使用本服务时，您应在使用本服务前对本服务的服务条款以及北京磨刀刻石科技有限公司针对本服务发出的各类公示阅览并同意所有内容。</p>
+        <p>2.4 您选择第三方支付渠道享受本服务，将视为同意北京磨刀刻石科技有限公司代理您向第三方支付渠道发出扣款指令，并同意第三方支付渠道可以根据北京磨刀刻石科技有限公司发出的扣款指令，在不验证您的账户密码、支付密码、短信校验码等信息的情况下从上述账户扣划下一个计费周期费用。您选择第三方支付渠道可能产生第三方手续费，具体金额以开通服务时显示金额为准。</p>
+
+
+        <p><strong>3. 自动续费使用规则</strong></p>
+
+        <p>3.1 北京磨刀刻石科技有限公司负责向您提供有关自动续费收费具体情况的查询方式。</p>
+
+        <p>3.2 如在扣费过程出现差错，北京磨刀刻石科技有限公司和您应密切配合查明原因，各自承担己方过错造成的损失；若因双方各自存在不均等过错造成的损失，由双方按过错的程度承担相应责任；双方共负责任的，由双方均摊责任。</p>
+
+        <p>3.3 您选择使用本服务后，除非您选择终止本服务，否则，您对北京磨刀刻石科技有限公司的自动扣款委托为不可撤销，北京磨刀刻石科技有限公司基于本服务在您开通自动续费服务时选择的支付方式下所扣划的费用，不以任何方式对您所支付的费用予以退还。</p>
+
+        <p><strong>3.4 若在自动续费日之前，墨刀APP包月/包季服务价格发生调整，北京磨刀刻石科技有限公司将在扣划之前通过相关页面公示修改内容，并在征得您的同意之后，按现时有效的价格扣划。</strong></p>
+
+        <p>3.5 北京磨刀刻石科技有限公司对您开通本服务不收取任何手续费，但北京磨刀刻石科技有限公司有权根据业务需要或市场变化等原因决定是否进行收费或调整自动续费周期及费用，并在相关页面进行公告。</p>
+
+        <p>3.6  北京磨刀刻石科技有限公司向您提供的本服务仅限于您在墨刀APP平台使用，任何以恶意破解等非法手段规避续费而使用付费会员服务的，均构成对本协议的违反。由此引起的一切法律后果由行为人负责，北京磨刀刻石科技有限公司将依法追究行为人的法律责任。</p>
+
+        <p><strong>4. 自动续费服务的退订</strong></p>
+
+        <p><strong>4.1 您有权随时在墨刀APP平台相关页面中选择终止本服务，终止后，北京磨刀刻石科技有限公司将停止向您提供本服务。</strong></p>
+
+        <p>4.2 退订流程，即关闭连续包会员服务步骤：</p>
+
+        <p>4.2.1 通过官网退订：登录https://modao.cc后，进入工作台，个人空间>订单>个人订单记录，选择取消订阅。</p>
+
+        <p>4.2.2 如果需取消通过支付宝支付方式所开通的自动续费服务，可以在支付宝的我的>设置>支付设置>免密支付/自动扣款页面进行退订。</p>
+
+        <p>如按照路径排查后仍然无法找到要取消的墨刀APP会员自动续费服务，那就表明您已经取消。</p>
+
+        <p><strong>5. 协议有效期限和终止</strong></p>
+
+        <p>5.1 本协议自您选择接受或使用本服务后生效，直至您终止本服务/注销会员资格时终止。终止本服务后，北京磨刀刻石科技有限公司将停止向您提供本服务。</p>
+
+        <p>5.2 您在选择终止本服务前已经委托北京磨刀刻石科技有限公司自动续费扣款的指令仍然有效，北京磨刀刻石科技有限公司一旦扣款成功不予退还，并将为您开通下一个计费周期的服务。</p>
+
+        <p><strong>6. 法律管辖和争议解决</strong></p>
+
+        <p>本协议将受中华人民共和国法律管辖，冲突规范除外。由本协议引起的或与本协议有关的任何争议应提交北京磨刀刻石科技有限公司经营所在地北京市朝阳区人民法院诉讼解决。</p>
+
+      </section>
     </div>
-</body>
+  </main>
 </html>
