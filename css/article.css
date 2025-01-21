@@ -17,6 +17,11 @@ p {
   padding: 0;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
+
 .news-aggregation-page-container {
   width: 100%;
   max-width: 1920px;
@@ -127,12 +132,17 @@ p {
 }
 
 .left-side .menu-container .sub-menu.active {
+  border-radius: 0 0 8px 8px;
   background-color: #fff;
 }
 
 .nav-link {
   color: #333;
   padding: 8px 16px;
+}
+
+.nav-link.active:not(.sub-is-active) {
+  border-radius: 8px;
 }
 
 .left-side .menu-container .sub-menu a.sub-nav-link {
@@ -153,17 +163,19 @@ p {
 }
 
 .nav-link.sub-is-active {
+  border-radius: 8px 8px 0 0;
   background-color: #fff;
 }
 
 /* 中间内容区 */
 .article-content {
   flex: 1;
-  /* 自适应宽度 */
   min-width: 0;
-  /* 防止flex布局中的内容溢出 */
   margin: 0 32px;
-  /* 设置左右间距 */
+}
+
+.article-content img {
+  border-radius: 12px;
 }
 
 /* 内容区的详情样式 */
