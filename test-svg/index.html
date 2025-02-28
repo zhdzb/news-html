@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg id="banner-line" width="1123.607910" height="873.118652" viewBox="0 0 1123.61 873.119" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path id="banner-draw-path" d="M59.585 25.061C-42.4149 275.561 78.6014 725.561 458.093 460.061C837.585 194.561 432.085 -11.939 259.089 460.061C165.086 780.061 384.586 1006.06 746.586 710.561C892.509 593.561 798.509 512.561 734.586 581.561C604.586 726.061 854.009 969.061 1098.51 659.061" stroke="#FFD324" stroke-width="50" stroke-linecap="round"/>
+    </svg>
+    <h1>专业级</h1>
+
+    <div style="display: block; width: 50px;
+    height: 50px;    background: linear-gradient(269.1deg, #32E2E2 0.22%, #0094FF 24.18%, #1B5BFF 50.74%, #EE43BE 74.18%, #FF6543 100.22%);"></div>
+    <style>
+h1 {
+    background-image: linear-gradient(269.1deg, #32E2E2 0.22%, #0094FF 24.18%, #1B5BFF 50.74%, #EE43BE 74.18%, #FF6543 100.22%);
+    -webkit-background-clip: text; /* 将背景裁剪到文本 */
+    -webkit-text-fill-color: transparent; /* 使文本透明，显示背景渐变 */
+    background-clip: text;
+    color: transparent; /* 兼容非 WebKit 浏览器 */
+}
+        #banner-draw-path {
+            /* 设置线条的总长度 */
+            stroke-dasharray: 6000;  /* 设置为路径长度，你可以通过js或调试工具获取准确的长度 */
+            stroke-dashoffset: 6000; /* 初始化为路径总长度 */
+            animation: drawLine 4s ease-in-out forwards; /* 设置动画 */
+        }
+    
+        @keyframes drawLine {
+            0% {
+                stroke-dashoffset: 6000;
+            }
+            100% {
+                stroke-dashoffset: 0; /* 动画结束时线条被完全绘制 */
+            }
+        }
+    </style>
+    
+</body>
+</html>
